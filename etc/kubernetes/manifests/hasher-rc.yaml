@@ -4,8 +4,14 @@
 # replicationcontroller-v1  - https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#replicationcontroller-v1-core
 # Kube8 Cluster   - https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg
 
-apiVersion:
-kind:
-metadata:
+apiVersion: v1
+kind: ReplicationController
+metadata: 
+  name: hasher-rc
 spec:
-status:
+  replicas: 2
+  selector: 
+    app: hasher
+  template:
+    
+status: {}
