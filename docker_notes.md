@@ -130,3 +130,12 @@ FROM    library/ubuntu:latest
 RUN     apt-get update
 RUN     apt-get install net-tools -y 
 ```
+
+To check CPU/Memory usage 
+```
+docker container stats --no-stream hasher
+docker container stats --no-stream redis
+docker container stats --no-stream rng
+docker container stats --no-stream webui
+docker container stats --no-stream worker
+```
