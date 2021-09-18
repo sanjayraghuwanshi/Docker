@@ -1,0 +1,33 @@
+Docker Plarsight
+################
+
+Container - Isolated area of an OS with resource usage limites applied.
+
+1. Big Picture View
+2. Kernel Primitives
+3. Docker Engine
+
+Namespaces - pid, net, mnt, ipc, uts, user
+
+pid	 -	Process ID
+net  - 	Network
+mnt  -	Filesystm
+ipc  -	Inter-proc comms
+uts  - 	UTS
+user - 	User
+
+Image - OS files/object
+		App files
+		Manifest
+
+		
+docker volume ls 
+docker volume create myvol
+docker volume inspect myvol
+
+docker volume create psvol
+
+docker volume ls
+docker volume rm myvol psvol
+
+docker container run --dit --name voltest --mount source=ubervol, target=vol apline:latest
