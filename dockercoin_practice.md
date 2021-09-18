@@ -98,3 +98,9 @@ docker container logs rng --tail 1
 docker container logs webui --tail 1
 docker container logs worker --tail 1
 ```
+
+Open the webui to test the application
+
+```
+http://localhost:80/index.html
+```
